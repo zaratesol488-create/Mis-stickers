@@ -1,0 +1,27 @@
+</div>
+  </main>
+
+  <section class="controls">
+    <div style="display:flex; gap:5px">
+      <input type="text" id="prompt" placeholder="Ej: Gato ninja, helado rosa...">
+      <select id="styleMode" style="width:130px">
+        <option value="sticker style, white background, high resolution">Sticker</option>
+        <option value="anime style, cute, high quality">Anime</option>
+        <option value="3d render, clay style, white background">3D Clay</option>
+      </select>
+    </div>
+
+    <button class="btn-gen" id="btnMain" onclick="crearSticker()">✨ GENERAR IMAGEN</button>
+
+    <input type="text" id="bubbleText" placeholder="Texto de la burbuja..." oninput="actualizarBurbuja()">
+
+    <div class="btn-grid">
+      <button class="btn-acc" onclick="addObj('💭')">💭</button>
+      <button class="btn-acc" onclick="addObj('👑')">👑</button>
+      <button class="btn-acc" onclick="addObj('🕶️')">🕶️</button>
+      <button class="btn-acc" onclick="addObj('🔥')">🔥</button>
+      <button class="btn-acc" onclick="addObj('❤️')">❤️</button>
+      <button class="btn-del" onclick="borrarUltimo()">🗑️</button>
+    </div>
+
+    <button class="btn-save" onclick="guardar()">💾 GUARDAR 
